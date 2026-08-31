@@ -1,36 +1,56 @@
+/* --- Variables & Configuration globale --- */
+:root {
+  --bg-color: gainsboro;
+  --border-color: #000000;
+  --title-color: darkred;
+  --text-color: #1a1a1a;
+  --font-main: 'Syne Mono', monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 15px;
-  font-family: 'Syne Mono', monospace;
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
-p, li {
-  font-size: 15px;    
-  line-height: 2;
-  letter-spacing: 2px;
-}
-
-html {
-  background-color: gainsboro;
-}
-
+/* --- Layout Principal --- */
 body {
-  width: 550px;
-  margin: 0 auto;
-  background-color: gainsboro;
+  max-width: 550px;
+  width: 90%;
+  margin: 2rem auto;
+  background-color: var(--bg-color);
   padding: 0 25px 25px 25px;
-  border: 10px solid black;
+  border: 10px solid var(--border-color);
 }
 
+/* --- Typographie --- */
 h1 {
   margin: 0;
-  font-size: 35px;
+  font-size: 2.33rem; /* ~35px */
   text-align: center;
-  padding: 20px 0;    
-  color: darkred;
-  text-shadow: 3px 3px 1px black;
+  padding: 20px 0;
+  color: var(--title-color);
+  text-shadow: 3px 3px 1px var(--border-color);
 }
 
+p,
+li {
+  font-size: 1rem;
+  line-height: 1.8;
+  letter-spacing: 1.5px;
+}
+
+/* --- Médias --- */
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
   margin: 0 auto;
 }
