@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9WCJHSW7EG"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -12,27 +11,75 @@
     </script>
     
     <meta charset="utf-8">
-    <title>Site Personnel - Antoine Gallant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site personnel d'Antoine Gallant – Étudiant en Master of Science (M. Sc.) en Marketing à HEC Montréal.">
+    <title>Antoine Gallant | Portfolio & Parcours</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h1>ANTOINE GALLANT</h1>
-    <img src="20240720_201840.jpg" height="425" width="300" alt="Photo d'Antoine Gallant">
-    
-    <h2>Parcours Académique</h2>
-    <p>Après avoir étudié l'informatique puis obtenu mon Bachelor en Économie et Management à la GSEM (Université de Genève), je poursuis désormais mes études en Master of Science (M. Sc.) en Marketing à HEC Montréal.</p>
-    <ul> 
-      <li>Bachelor en Économie et Management – GSEM UNIGE</li>
-      <li>M. Sc. en Marketing – HEC Montréal</li>
-      <li>Cours particuliers de mathématiques (Swiss Maturité & Baccalauréat)</li>
-    </ul>
-    
-    <h2>Infos & Passions</h2>
-    <p>Passionné par la stratégie marketing, la création de contenu et les données, j'aime aussi occuper mon temps libre avec des activités variées : <strong>le vélo, le bloc, le tennis, la Formule 1, le hockey sur glace (supporteur des Canadiens de Montréal) et les jeux vidéo</strong>.</p>
-    
-    <h2>Projets</h2>
-    <p>Découvrez l'un de mes projets académiques et techniques :</p>
-    <a href="https://antoinegallant.github.io/projet.html/">Projet Sierpinski</a>
+    <main class="card">
+      
+      <header class="hero-container">
+        <img src="20240720_201840.jpg" alt="Photo d'Antoine Gallant" class="profile-img">
+        <div class="hero-text">
+          <h1>Antoine Gallant</h1>
+          <p class="hero-subtitle">M. Sc. en Marketing — HEC Montréal | Strategy & Data</p>
+        </div>
+      </header>
+
+      <div class="content">
+        
+        <section>
+          <h2>Parcours Académique</h2>
+          <p>
+            Après avoir étudié l'informatique puis obtenu mon Bachelor en Économie et Management à la GSEM (Université de Genève), 
+            je poursuis désormais mes études en Master of Science (M. Sc.) en Marketing à HEC Montréal.
+          </p>
+          
+          <div class="cards-grid">
+            <article class="info-card">
+              <h3>M. Sc. en Marketing</h3>
+              <p class="card-subtitle">HEC Montréal</p>
+            </article>
+            <article class="info-card">
+              <h3>Bachelor Économie & Management</h3>
+              <p class="card-subtitle">GSEM — Université de Genève</p>
+            </article>
+            <article class="info-card">
+              <h3>Enseignement Privé</h3>
+              <p class="card-subtitle">Mathématiques (Swiss Maturité & Baccalauréat)</p>
+            </article>
+          </div>
+        </section>
+        
+        <section>
+          <h2>Infos & Passions</h2>
+          <p>
+            Passionné par la stratégie marketing, la création de contenu et l'analyse de données, 
+            j'accorde une grande importance aux projets concrets et aux activités stimulantes :
+          </p>
+          
+          <div class="tags-container">
+            <span class="tag">🏎️ Formule 1</span>
+            <span class="tag">🏒 Hockey (Canadiens)</span>
+            <span class="tag">🚴 Vélo</span>
+            <span class="tag">🧗 Escalade (Bloc)</span>
+            <span class="tag">🎾 Tennis</span>
+            <span class="tag">🎮 Gaming</span>
+          </div>
+        </section>
+        
+        <section>
+          <h2>Projets</h2>
+          <p>Découvrez l'un de mes projets académiques et techniques :</p>
+          <a href="https://antoinegallant.github.io/projet.html/" class="btn-primary" target="_blank" rel="noopener">Projet Sierpinski →</a>
+        </section>
+
+      </div>
+    </main>
   </body>
 </html>
