@@ -254,3 +254,34 @@ p {
   border-radius: 4px;
 }
 
+/* --- Adaptations Mobile / Responsive --- */
+@media (max-width: 640px) {
+  body {
+    padding: 12px 8px; /* Réduit l'espace autour de la carte */
+  }
+
+  .hero-container {
+    flex-direction: column; /* Passe la photo et le texte l'un en dessous de l'autre */
+    text-align: center;
+    padding: 32px 20px;
+    gap: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.75rem; /* Ajuste la taille du prénom pour éviter tout débordement */
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .content {
+    padding: 24px 20px 32px 20px; /* Réduit les marges internes */
+  }
+}
+
