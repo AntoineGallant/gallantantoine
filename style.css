@@ -78,6 +78,8 @@ body {
   font-weight: 700;
   letter-spacing: -0.025em;
   color: #ffffff;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .hero-subtitle {
@@ -257,31 +259,42 @@ p {
 /* --- Adaptations Mobile / Responsive --- */
 @media (max-width: 640px) {
   body {
-    padding: 12px 8px; /* Réduit l'espace autour de la carte */
+    padding: 8px 4px; /* Marges extérieures très faibles pour optimiser l'espace */
+  }
+
+  .card {
+    border-radius: 16px; /* Coins légèrement plus doux sur mobile */
   }
 
   .hero-container {
-    flex-direction: column; /* Passe la photo et le texte l'un en dessous de l'autre */
+    flex-direction: column; /* Aligne la photo au-dessus du texte */
     text-align: center;
-    padding: 32px 20px;
-    gap: 20px;
+    padding: 24px 16px; /* Marges réduites dans l'en-tête */
+    gap: 16px;
+  }
+
+  .hero-text {
+    width: 100%; /* Force le conteneur à prendre toute la largeur disponible */
   }
 
   .hero-text h1 {
-    font-size: 1.75rem; /* Ajuste la taille du prénom pour éviter tout débordement */
+    font-size: 1.5rem; /* Taille de texte plus petite pour éliminer tout débordement */
+    word-break: break-word; /* Force la rupture de mot si l'écran est très étroit */
+    overflow-wrap: break-word;
+    line-height: 1.2;
   }
 
   .hero-subtitle {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    margin-top: 6px;
   }
 
   .profile-img {
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
   }
 
   .content {
-    padding: 24px 20px 32px 20px; /* Réduit les marges internes */
+    padding: 20px 16px 28px 16px; /* Marges internes réduites pour le contenu */
   }
 }
-
