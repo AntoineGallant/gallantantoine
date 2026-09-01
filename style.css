@@ -51,15 +51,16 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* --- Hero Banner & Photo --- */
+/* --- En-tête / Hero Section (Bleu plus foncé) --- */
 .hero-container {
-  background: linear-gradient(135deg, #4f46e5 0%, #312e81 100%);
+  background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
   padding: 48px 40px;
   color: white;
   display: flex;
   align-items: center;
   gap: 32px;
 }
+
 
 .profile-img {
   width: 150px;
